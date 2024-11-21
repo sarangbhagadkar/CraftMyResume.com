@@ -1,0 +1,78 @@
+/***** starts Hero Section *****/ 
+#choose {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="%2312DDDC"><path d="M0 1v99c134.3 0 153.7-99 296-99H0Z" opacity=".5"></path><path d="M1000 4v86C833.3 90 833.3 3.6 666.7 3.6S500 90 333.3 90 166.7 4 0 4h1000Z" opacity=".5"></path><path d="M617 1v86C372 119 384 1 196 1h421Z" opacity=".5"></path><path d="M1000 0H0v52C62.5 28 125 4 250 4c250 0 250 96 500 96 125 0 187.5-24 250-48V0Z"></path></svg>');
+    background-size: cover; /* Ensures the image fits properly */
+    background-position: bottom; /* Aligns the background at the bottom */
+    background-repeat: no-repeat; /* Prevents tiling */
+    background-image: linear-gradient(blue skyblue 90deg);
+    margin: -16px -16px ;
+}
+#choose{
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+ /***** End Hero Section *****/
+
+ 
+ /* Ensure arrows are visible */
+ .carousel-control-prev-icon,
+ .carousel-control-next-icon {
+     background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background */
+     border-radius: 50%; /* Make the icons circular */
+     width: 40px;
+     height: 40px;
+ }
+
+ .carousel-control-prev-icon:hover,
+ .carousel-control-next-icon:hover {
+     background-color: rgba(0, 0, 0, 0.8); /* Darker on hover */
+ }
+
+ .carousel-control-prev,
+ .carousel-control-next {
+     z-index: 5; /* Ensure buttons are above the content */
+ }
+
+ /***** hover Section *****/  
+ 
+ .resume-container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+.resume-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.resume-container:hover .overlay {
+    opacity: 1;
+}
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+ /***** End hover Section *****/
+ 
